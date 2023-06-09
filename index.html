@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="pt-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Índices Monetários</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Índices Monetários</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('TJSP')">TJSP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('ORTN')">ORTN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('UFIR')">UFIR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('CADERNETA')">CADERNETA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('IGPDI')">IGPDI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('IGPM')">IGPM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('INPC')">INPC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('IPCA')">IPCA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('SELIC')">SELIC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('IPC')">IPC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('TR')">TR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="buscaIndice('TJMG')">TJMG</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h1>ÍNDICES MONETÁRIOS CALCULADOS</h1>
+    <p>Basta copiar os resultados e colar em seus respectivos arquivos .csv que ficam nos diretórios:</p>
+    <p>/home/cloud/var/tabelas/</p>
+    <p>/home/cloud/public/atualizacaomonetaria/</p>
+  </div>
+
+  <div class="container mt-4">
+    <h1 id="tituloIndice"></h1>
+    
+    <ul class="list-group" id="listaResultados">
+    </ul>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="bootstrap.min.js"></script>
+</body>
+</html>
